@@ -112,7 +112,7 @@ const memento = {
         for (i = 0 ; i < memento.level ; i++) {
             for (let a = 0; a < 2; a++) {
                 const front = document.createElement('div');
-                front.style.backgroundImage = `url('../images/logo_MOAI.png')`;
+                front.style.backgroundImage = `url('images/logo_MOAI.png')`;
                 front.classList.add("front");
 
                 const back = document.createElement('div');
