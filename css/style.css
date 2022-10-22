@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'Inspiration', cursive;
+    background: rgb(117,197,218);
+    background: linear-gradient(51deg, rgba(117,197,218,1) 1%, rgba(206,132,240,1) 50%, rgba(238,134,146,1) 100%);
+}
+
+/* -----------OVERLAY----------- */
+
+#overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+}
+
+.hidden {
+    display: none;
+}
+
+/* -----------HEADER----------- */
+.header_title{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin: 0.5rem;
+    font-size: 6rem;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+h2{
+    font-size: 3rem;
+    width: 50%;
+    text-align: center;  
+}
+
+
+/* -----------BOARD----------- */
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 15px outset rgb(129, 171, 210);  
+    display: flex; 
+    margin: auto;
+    max-width: 1500px;
+}
+
+
+button{
+    font-size: 8rem;
+    font-family: 'Inspiration', cursive;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* -----------CARD----------- */
+.containerCard {
+    position: relative;   
+    width:135px;
+    height: 115px;    
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.card--return {
+    transform:rotateY(180deg);
+}
+
+.card--valid {
+    transform:rotateY(180deg);
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(168, 188, 201);
+    background-size: cover;
+    background-position: center;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(40, 158, 65); 
+    background-size: cover;
+    transform: rotateY(180deg);
+    background-position: center;
+}
+
+
+/* -----------FOOTER----------- */
+footer {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
